@@ -13,9 +13,6 @@ int main(int argc, char* argv[]) {
 	fread(&b, sizeof(uint32_t), 1, fp2);
 	uint32_t nb = ntohl(b);
 
-	printf("32 bit number=0x%x\n", na);
-	printf("32 bit number=0x%x\n", nb);
-	
 	printf("%d(%x)+%d(%x)=%d(%x)", na,na,nb,nb,na+nb, na+nb);
 	fclose(fp1);	fclose(fp2);
 	return 0;
